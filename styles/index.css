@@ -1,0 +1,148 @@
+:root{
+  --light: #D9D9D9;
+  --primary: #224395;
+  --secondary: #FF0000;
+  --terciary: #7499F8;
+  --shadow: #00000099;
+}
+
+@font-face {
+  font-family: "NATS";
+  src: url(../assets/fonts/NATS-Regular.ttf);
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  font-family: 'NATS', sans-serif;
+}
+
+header{
+  & .top-header, .bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+    & div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      & p{
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      & a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+      }
+
+      & a:hover{
+        border-bottom: 1px solid black;
+      }
+      
+      & #fia{
+        height: 2rem;
+      }
+
+      & #formulae{
+        height: 1.5rem;
+      }
+
+      & .bi{
+        font-size: 1.8rem;
+        align-self: flex-end;
+      }
+
+      & nav{
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  & .top-header{
+    background-color: var(--light);
+  }
+
+  & .bottom-header{
+    background-color: var(--primary);
+    padding: 0.5rem;
+
+    & nav{
+      & a{
+        color: var(--light);
+      }
+    }
+
+    & nav a:hover{
+      border-bottom: 1px solid var(--light);
+    }
+
+    & #searchInput{
+      position: relative;
+      & input{
+        border: none;
+        border-radius: 2.5rem;
+        padding: 0.2rem 0 0.2rem 2rem;
+        width: 100%;
+        background-color: var(--terciary);
+      }
+
+      & input::placeholder{
+        color: var(--shadow);
+      }
+
+      & .bi{
+        position: absolute;
+        left: 0.5rem;
+        top: 0.3rem;
+        font-size: 1rem;
+        color: var(--shadow);
+      }
+    }
+  }
+}
+
+main{
+  & #hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    & #heroText{
+      display: flex;
+      position: absolute;
+      text-align: center;
+      gap: 3rem;
+      color: var(--light);
+      
+      & h1{
+        font-size: 14rem;
+      }
+
+      & #rightText{
+        color: var(--secondary);
+      }
+    }
+  }
+}
