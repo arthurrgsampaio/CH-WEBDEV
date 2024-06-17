@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const img = document.getElementById('imagemPrincipal');
   let counter = 0;
   const mudar = () => {
-    console.log('teste');
       img.src = images[counter].src;
       img.alt = images[counter].alt;
   
