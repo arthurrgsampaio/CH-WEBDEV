@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/temporary.css">
+  <link rel="stylesheet" href="../styles/register.css">
   <link rel="shortcut icon" href="../assets/icon/fe.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
-  <title>Notícias</title>
+  <title>Vídeos</title>
 </head>
 <body>
   <div class="container">
@@ -31,7 +31,7 @@
           <nav>
             <a href="./login.html">LOGIN</a>
             <p>|</p>
-            <a href="./register.html">REGISTRO</a>
+            <a href="#">REGISTRO</a>
           </nav>
         </div>
       </div>
@@ -39,7 +39,7 @@
       <div class="bottom-header">
         <div>
           <nav>
-            <a href="#">GARAGEM</a>
+            <a href="./garagem.html">GARAGEM</a>
           </nav>
         </div>
         <div id="searchInput">
@@ -50,10 +50,23 @@
     </header>
 
     <main>
-      <div class="mainContainer">
-        <h2>Página em desenvolvimento :&#40;</h2>
-        <p>Sentimos muito pelo incômodo, mas essa página ainda está em desenvolvimento, mas fique a vontade para voltar à nossoa página inicial e explorar mais um pouco nosso site!</p>
-        <a href="../index.html"><button>Voltar à Home</button></a>
+      <div id="mainContainer">
+        <h2>Registre-se</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome">
+
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email">
+          
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha">
+          
+          <button>Registrar</button>
+        </form>
       </div>
     </main>
 
